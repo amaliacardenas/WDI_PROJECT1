@@ -1,14 +1,12 @@
 main {
   width: 1000px;
   height: 1000px;
-  float: left;
 }
 
 .scoreboard {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   float: right;
-  clear: both;
 }
 
 .player-box{
@@ -18,14 +16,19 @@ main {
 
 .cell {
   display: inline-block;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   background: red; 
   border: 1px solid black;
   border: 1px solid black;
   margin-right: -5px;
   margin-bottom: -1px;
   vertical-align: top;
-  line-height: 200px;
-  font-size: 80px;
 }
+
+ul {
+  list-style-type: none;
+  display: block;
+}
+
+buttons

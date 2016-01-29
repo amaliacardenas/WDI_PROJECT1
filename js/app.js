@@ -1,5 +1,15 @@
 $(document).ready(function(){
-  console.log("Hello World");
+ 
+ var answers= ["Sister Mary Keneth Keller", "Anita Borg"]; 
+
+
+  $(".button").on( "click", function() {
+    console.log($(this).parent().index(), $(this).text());
+    var parentIndex = $(this).parent().index();
+    var answer = $(this).text();
+    console.log(answers[parentIndex]=== answer);
+  });
+
 });
 
 
