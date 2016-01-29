@@ -1,9 +1,3 @@
-$(document).ready(function(){
-  console.log("Hello World");
-});
-
-
-
 //sudo code
 
   //Create your html and basic CSS
