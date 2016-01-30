@@ -1,19 +1,14 @@
 $(document).ready(function(){
  
- var answers= ["Sister Mary Keneth Keller","Ada Lovelace",
+  var answers = ["Sister Mary Keneth Keller","Ada Lovelace",
 "Kimberly Bryant","Hedy Lamarr", "Zoe Quinn", "Rachel E. Walker", "Eliana Murillo","Jennifer Argüello","Tracy Chou", "Ruchi Sanghvi", "Grace Hoper",
 "Anita Borg"]; 
 
-var player1Score = 0;
-var player2Score  = 0;
-var player1Choice;
-var player2Choice;
-
-
-var userScore = 0;
-var botScore  = 0;
-var userChoice;
-var botChoice;
+  var player1 = 0;
+  var player2  = 0;
+  var player1Choice;
+  var player2Choice;
+  var turnCounter = 1;
 
 
   $(".button").on( "click", function() {
@@ -21,15 +16,84 @@ var botChoice;
     var parentIndex = $(this).parent().index();
     var answer = $(this).text();
     console.log(answers[parentIndex]=== answer);
+    
+      if(turnCounter % 2 === 0){
+      if(answers[parentIndex]=== answer){
+        player1 +=1;
+        getWinner();
+        updateScoreBoard();
+        turnCounter +=1;
+      } else {
+        console.log(answers[parentIndex]=== answer);
+        turnCounter +=1;
+      }
+    }else {
+      if(answers[parentIndex]=== answer){
+        player2 +=1;
+        updateScoreBoard();
+        turnCounter +=1;
+        getWinner();
+      } else {
+       console.log(answers[parentIndex]=== answer);
+      turnCounter +=1;
+      }
+    }
+  
   });
+
+
+
+
+function updateScoreBoard() {
+  $('#player1Score').text(player1);
+  $('#player2Score').text(player2);
+}
+
+
+function getWinner(){
+  if(player1 ===5){
+    alert("player 1 won!");
+
+  } else if (player2 ===5){
+    alert("player 2 won!");
+
+  } else {
+    console.log("Nobody won. Try again.")
+    }
+  }
 
 });
 
 
-function updateScoreBoard() {
-  $('#player1Score').text(player1Score);
-  $('#player2Score').text(player2Score);
-}
+
+// function evaluate() {
+//   switch (userChoice) {
+//     case "rock":
+//     if (botChoice == "paper") { botScore++; } 
+//     if (botChoice == "scissors") { userScore++; }
+//     break;
+
+//     case "paper":
+//     if (botChoice == "rock") { userScore++; } 
+//     if (botChoice == "scissors") { botScore++; }
+//     break;
+
+//     case "scissors":
+//     if (botChoice == "paper") { userScore++; } 
+//     if (botChoice == "rock") { botScore++; }
+//     break;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
 
 //sudo code
 
