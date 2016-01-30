@@ -42,8 +42,6 @@ $(document).ready(function(){
   });
 
 
-
-
 function updateScoreBoard() {
   $('#player1Score').text(player1);
   $('#player2Score').text(player2);
@@ -63,34 +61,6 @@ function getWinner(){
   }
 
 });
-
-
-
-// function evaluate() {
-//   switch (userChoice) {
-//     case "rock":
-//     if (botChoice == "paper") { botScore++; } 
-//     if (botChoice == "scissors") { userScore++; }
-//     break;
-
-//     case "paper":
-//     if (botChoice == "rock") { userScore++; } 
-//     if (botChoice == "scissors") { botScore++; }
-//     break;
-
-//     case "scissors":
-//     if (botChoice == "paper") { userScore++; } 
-//     if (botChoice == "rock") { botScore++; }
-//     break;
-//   }
-// }
-
-
-
-
-
-
-
 
 
 

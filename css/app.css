@@ -32,9 +32,66 @@ ul {
 }
 
 
-#1 {
-  background: url("../images/mary_keller.jpg") no-repeat;
+#box1 {
+  background: url("../images/mary_keller.png") no-repeat;
+  background-size: cover;
 }
+
+#box2 {
+  background: url("../images/Ada-Lovelace.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box3 {
+  background: url("../images/KimberlyBryant.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box4 {
+  background: url("../images/Hedy-Lamarr.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box5 {
+  background: url("../images/Zoe-Quinn.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box6 {
+  background: url("../images/Rachel-Walker.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box7 {
+  background: url("../images/eliana-murillo.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box8 {
+  background: url("../images/Jennifer-Arguello.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box9 {
+  background: url("../images/TracyChou.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box10 {
+  background: url("../images/Ruchi-Sanghvi.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box11 {
+  background: url("../images/Grace-Hoper.jpg") no-repeat;
+  background-size: cover;
+}
+
+#box12 {
+  background: url("../images/Anita_Borg.jpg") no-repeat;
+  background-size: cover;
+}
+
 
 
 
