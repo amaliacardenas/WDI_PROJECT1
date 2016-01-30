@@ -1,6 +1,19 @@
 $(document).ready(function(){
  
- var answers= ["Sister Mary Keneth Keller", "Anita Borg"]; 
+ var answers= ["Sister Mary Keneth Keller","Ada Lovelace",
+"Kimberly Bryant","Hedy Lamarr", "Zoe Quinn", "Rachel E. Walker", "Eliana Murillo","Jennifer Argüello","Tracy Chou", "Ruchi Sanghvi", "Grace Hoper",
+"Anita Borg"]; 
+
+var player1Score = 0;
+var player2Score  = 0;
+var player1Choice;
+var player2Choice;
+
+
+var userScore = 0;
+var botScore  = 0;
+var userChoice;
+var botChoice;
 
 
   $(".button").on( "click", function() {
@@ -13,6 +26,10 @@ $(document).ready(function(){
 });
 
 
+function updateScoreBoard() {
+  $('#player1Score').text(player1Score);
+  $('#player2Score').text(player2Score);
+}
 
 //sudo code
 
