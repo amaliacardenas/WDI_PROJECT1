@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+
+  // $(".card").on("click", function() {
+  //   $(this).addClass("flipped")
+  // })
  
   var answers = ["Sister Mary Keneth Keller","Ada Lovelace",
 "Kimberly Bryant","Hedy Lamarr", "Zoe Quinn", "Rachel E. Walker", "Eliana Murillo","Jennifer Argüello","Tracy Chou", "Ruchi Sanghvi", "Grace Hoper",
@@ -13,18 +18,19 @@ $(document).ready(function(){
 
   $(".button").on( "click", function() {
     console.log($(this).parent().index(), $(this).text());
-    var parentIndex = $(this).parent().index();
+    var parentIndex = $(this).parents('.cell').index();
     var answer = $(this).text();
     console.log(answers[parentIndex]=== answer);
     
-      if(turnCounter % 2 === 0){
+    if(turnCounter % 2 === 0){
       if(answers[parentIndex]=== answer){
         player1 +=1;
         getWinner();
         updateScoreBoard();
         turnCounter +=1;
 
-        $(this).parent().addClass("correct")
+        $(this).parents('.card').addClass("flipped")
+        console.log($(this));
 
         // $(this).getElementById(box).classList.add("correct");
         // document.getElementById(box).classList.remove("incorrect") 
@@ -38,12 +44,12 @@ $(document).ready(function(){
         updateScoreBoard();
         turnCounter +=1;
         getWinner();
+        $(this).parents('.card').addClass("flipped")
       } else {
        console.log(answers[parentIndex]=== answer);
       turnCounter +=1;
       }
-    }
-  
+    } 
   });
 
 
