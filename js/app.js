@@ -23,6 +23,11 @@ $(document).ready(function(){
         getWinner();
         updateScoreBoard();
         turnCounter +=1;
+
+        $(this).parent().addClass("correct")
+
+        // $(this).getElementById(box).classList.add("correct");
+        // document.getElementById(box).classList.remove("incorrect") 
       } else {
         console.log(answers[parentIndex]=== answer);
         turnCounter +=1;
@@ -50,13 +55,17 @@ function updateScoreBoard() {
 
 function getWinner(){
   if(player1 ===5){
-    alert("player 1 won!");
+
+    $("#winner").text("player 1 won!");
+    // alert("player 1 won!");
 
   } else if (player2 ===5){
-    alert("player 2 won!");
+    $("#winner").text("player 2 won!");
+    // alert("player 2 won!");
 
   } else {
-    console.log("Nobody won. Try again.")
+    $("#winner").text("Nobody won, sorry. Try again")
+    // console.log("Nobody won. Try again.")
     }
   }
 

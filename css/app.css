@@ -1,11 +1,19 @@
+body {
+  background: url("../images/2.jpg") no-repeat;
+}
+
+h1{
+  color: white;
+}
+
 main {
   width: 1000px;
   height: 1000px;
 }
 
 .scoreboard {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   float: right;
 }
 
@@ -18,7 +26,7 @@ main {
   display: inline-block;
   width: 200px;
   height: 200px;
-  background: red; 
+  background: #015f8c; 
   border: 1px solid black;
   border: 1px solid black;
   margin-right: -5px;
@@ -31,6 +39,15 @@ ul {
   display: block;
 }
 
+
+.correct {
+  transform: rotate(90deg) scaleX(-1);
+}
+
+
+.incorrect {
+background: red;
+}
 
 #box1 {
   background: url("../images/mary_keller.png") no-repeat;
@@ -93,7 +110,6 @@ ul {
 }
 
 
-
-
-
-buttons
+buttons {
+  
+}
