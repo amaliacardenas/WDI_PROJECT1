@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+//buttons are hidden on mouseover buttons appear, on mouseleave buttons disappear. 
   $(".card").on("mouseover", function() {
     $(this).children().children().children().removeClass("hidden");
   })
